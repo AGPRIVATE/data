@@ -39,7 +39,7 @@ src_dir: ''
 # The defaults below show what is used when this is omitted.
 inputs:
   - class: InputSdmxJson
-    source: https://data.un.org/ws/rest/data/IAEG-SDGs,DF_SDG_GLH,1.16/..SH_STA_MORT+SH_DYN_MORT+IT_USE_II99.716.........../ALL/?detail=full&dimensionAtObservation=TIME_PERIOD
+    source: https://data.un.org/ws/rest/data/IAEG-SDGs,DF_SDG_GLH,1.16/..SH_STA_MORT+SH_DYN_MORT+IT_USE_II99.716.........../ALL/?detail=full&dimensionAtObservation=TIME_PERIOD&format=jsondata
     dimension_map:
       REF_AREA|ZW: ''
     dsd: 'LocalRegistry.xml'
