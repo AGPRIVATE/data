@@ -40,7 +40,7 @@ src_dir: ''
 # The defaults below show what is used when this is omitted.
 inputs:
   - class: InputSdmxJson
-    source: http://host.docker.internal:82/rest/data/ZW1,DF_SDG_ZW,1.0/A............../?format=jsondata
+    source: http://host.docker.internal:82/rest/data/ZW1,DF_SDG_ZW,1.0/A............../
     dimension_map:
       REF_AREA|ZW: ''
     dsd: http://host.docker.internal:82/rest/dataflow/ZW1/DF_SDG_ZW/1.0?references=all
