@@ -15,10 +15,6 @@
             "type": "integer"
           },
           {
-            "name": "SERIES",
-            "type": "string"
-          },
-          {
             "name": "SEX",
             "type": "string",
             "constraints": {
@@ -28,10 +24,6 @@
                 ""
               ]
             }
-          },
-          {
-            "name": "UNIT_MEASURE",
-            "type": "string"
           },
           {
             "name": "Value",
