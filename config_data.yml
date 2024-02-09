@@ -47,6 +47,11 @@ inputs:
     import_codes: true
     indicator_id_xpath: .//Name
     indicator_name_xpath: .//Name
+    drop_dimensions:
+      - FREQ
+      - REPORTING_TYPE
+      - NATURE
+      - TIME_COVERAGE
 #  - class: InputSdmxMl_Multiple
 #      path_pattern: 'data/*.xml'
 #      dsd: 'LocalRegistry.xml'
