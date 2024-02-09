@@ -1,0 +1,51 @@
+{
+  "resources": [
+    {
+      "path": "data.csv",
+      "name": "data",
+      "profile": "tabular-data-resource",
+      "scheme": "file",
+      "format": "csv",
+      "hashing": "md5",
+      "encoding": "utf-8",
+      "schema": {
+        "fields": [
+          {
+            "name": "Year",
+            "type": "integer",
+            "title": "Year"
+          },
+          {
+            "name": "COMPOSITE_BREAKDOWN",
+            "type": "string",
+            "constraints": {
+              "enum": [
+                "SKILL_ICTATCH",
+                "SKILL_ICTCDV",
+                "SKILL_ICTCMFL",
+                "SKILL_ICTCPT",
+                "SKILL_ICTPRGM",
+                "SKILL_ICTPRVCY",
+                "SKILL_ICTPST",
+                "SKILL_ICTSCRTY",
+                "SKILL_ICTSFWR",
+                "SKILL_ICTSSHT",
+                "SKILL_ICTTRFF",
+                ""
+              ]
+            },
+            "title": "COMPOSITE_BREAKDOWN"
+          },
+          {
+            "name": "Value",
+            "type": "number",
+            "title": "Value"
+          }
+        ]
+      }
+    }
+  ],
+  "profile": "data-package",
+  "name": "Gender",
+  "title": "parity index for youth/adults with information and communications technology (ICT) skills [4.5.1]"
+}
