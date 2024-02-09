@@ -39,11 +39,13 @@ src_dir: ''
 # folder. Further, each item can have any/all of the parameters that class uses.
 # The defaults below show what is used when this is omitted.
 inputs:
-  - class: InputSdmxMl_Multiple
-    path_pattern: 'data/*.xml'
-    dsd: 'LocalRegistry.xml'
+  - class: InputSdmxJson
+    source: https://data.un.org/ws/rest/data/IAEG-SDGs,DF_SDG_GLH,1.16/...716.........../ALL/?detail=full&dimensionAtObservation=TIME_PERIOD
     dimension_map:
       REF_AREA|ZW: ''
+    dsd: 'LocalRegistry.xml'
+    dimension_map:
+    REF_AREA|ZW: ''
     drop_dimensions:
       - FREQ
       - REPORTING_TYPE
@@ -54,6 +56,19 @@ inputs:
     import_observation_attributes: true
   - class: InputWordMeta
     path_pattern: meta/*-*.docm
+#  - class: InputSdmxMl_Multiple
+#      path_pattern: 'data/*.xml'
+#      dsd: 'LocalRegistry.xml'
+#      dimension_map:
+#        REF_AREA|ZW: ''
+#      drop_dimensions:
+#        - FREQ
+#        - REPORTING_TYPE
+#        - NATURE
+#        - TIME_COVERAGE
+#      import_codes: true
+#      import_series_attributes: true
+#      import_observation_attributes: true
   - class: InputYamlMeta
     path_pattern: indicator-config/*-*.yml
     git: false
