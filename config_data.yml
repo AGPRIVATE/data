@@ -50,9 +50,9 @@ inputs:
       - REPORTING_TYPE
       - NATURE
       - TIME_COVERAGE
-     import_codes: true
-     import_series_attributes: true
-     import_observation_attributes: true
+    import_codes: true
+    import_series_attributes: true
+    import_observation_attributes: true
 #  - class: InputSdmxMl_Multiple
 #      path_pattern: 'data/*.xml'
 #      dsd: 'LocalRegistry.xml'
