@@ -44,9 +44,16 @@ inputs:
     dimension_map:
       REF_AREA|ZW: ''
     dsd: 'LocalRegistry.xml'
-    import_codes: true
     indicator_id_xpath: .//Name
     indicator_name_xpath: .//Name
+    drop_dimensions:
+      - FREQ
+      - REPORTING_TYPE
+      - NATURE
+      - TIME_COVERAGE
+     import_codes: true
+     import_series_attributes: true
+     import_observation_attributes: true
 #  - class: InputSdmxMl_Multiple
 #      path_pattern: 'data/*.xml'
 #      dsd: 'LocalRegistry.xml'
