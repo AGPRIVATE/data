@@ -43,8 +43,8 @@ inputs:
     dimension_map:
       REF_AREA|ZW: ''
     dsd: 'LocalRegistry.xml'
-    indicator_id_xpath: .//Name
-    indicator_name_xpath: .//Name
+    indicator_id_xpath: .//Annotations/Annotation[1]/AnnotationText
+    indicator_name_xpath: .//Annotations/Annotation[3]/AnnotationText
     drop_dimensions:
       - FREQ
       - REPORTING_TYPE
